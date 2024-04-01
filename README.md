@@ -1,3 +1,4 @@
 # GIS_SS24
-## Headline 2
-test
+## Kinderwachsztums Tracker Web Anwendung
+Das Projekt soll den Kinderwachstum tracken, indem man die Größe des Kindes eingibt und das Datum und somit die Seite dir immer alle Daten anzeigt damit man sieht, in welcher Zeit das Kind wie viel gewachsen ist. Die Zielgruppe der Seite sind junge Familien.
+Die Seitenstruktur soll wie folgt aussehen: oben gibt es einen Knopf, mit dem man neue Daten hinzufügen kann. Wenn man diesen drückt, öffnet sich eine extra Seite wo man Datum und Name eingeben kann. Die Daten werden dann von unten anfangend, je nach größe sortiert und am Rand soll eine Zentimeteranzeige sein, die wie eine Messlate aussehen soll. Einträge die unter gleichen Namen hinzugefügt werden, werden direkt übereinander dokumentiert, damit man auf einen Blick direkt den Unterschied der Größe des indivudellen Kindes sieht. Einträge unter anderem Namen werden daneben dokumentiert.
