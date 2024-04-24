@@ -1,8 +1,9 @@
  h1{
-    
-    color: orange;
+    background-color: orange;
+    color: black;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
 
   }
   a {
@@ -19,7 +20,7 @@
     text-align: center; 
   }
   .btn {
-    background-color: #e81ecd; 
+    background-color: orange; 
     color: rgb(255, 255, 255); 
     padding: 10px 20px; 
     border: none; 
@@ -30,9 +31,34 @@
   }
   
   .btn:hover {
-    background-color: #cc00ff; 
+    background-color: #cb7a00; 
   }
- 
+  img {
+    float: left;
+  }
+  p {
+    clear: both;
+  }
+  
+  .Verschiebung {
+    display: flex;
+}
+
+.list {
+    margin-top: 390px;
+    font-size: 25px;
+    list-style-type: none;
+    font-weight: bolder;
+    
+}
+.divider {
+  height: 3px; 
+  border: none; 
+  background-color: #000000; 
+  width: 13%; 
+  margin-left: 50px;
+  
+}
   
   
   

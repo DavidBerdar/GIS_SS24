@@ -8,5 +8,60 @@
     <meta name="author" content="David Berdar" />
     <title>MeasureWallKids</title>
     <link rel="stylesheet" href="Styles.css" />
+    <style>
+      body {
+          background-image: url('WebsiteFotos/weiße-wand-textur-oder-hintergrund.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          }
+  </style>
+  <style>
+    
+    .form-container {
+        width: 50%; 
+        margin: 0 auto; 
+        padding: 20px; 
+        border: 2px solid #ff9500; 
+        border-radius: 20px; 
+      }
+
+      input {
+        width: 95%; 
+        display: block; 
+        margin-bottom: 100px; 
+        padding: 20px; 
+      }
+
+      button {
+        width: 100%; 
+        padding: 20px; 
+        background-color: #ff7b00; 
+        color: #ffffff; 
+        border: none; 
+        border-radius: 20px; 
+        cursor: pointer; 
+      }
+
+      label {
+        font-weight: bold; 
+        color:#000000
+        }
+</style>
   </head>
-  <body><p>"Name, Größe, Datum"</p></body>
+  <body>
+    <div class="form-container">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name des Kindes" required>
+            
+            <label for="datum">Datum:</label>
+            <input type="date" id="datum" name="datum" required>
+            
+            <label for="größe">Größe:</label>
+            <input type="number" id="größe" name="größe" placeholder="Größe des Kindes (in cm)" required>
+            
+            <button type="submit">Hinzufügen</button>
+        </form>
+    </div>
+</body>
+</html>
