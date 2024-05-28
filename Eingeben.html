@@ -8,6 +8,8 @@
     <meta name="author" content="David Berdar" />
     <title>MeasureWallKids</title>
     <link rel="stylesheet" href="Styles.css" />
+    <script src="eingeben.js" defer></script>
+    
     <style>
       body {
           background-image: url('WebsiteFotos/weiße-wand-textur-oder-hintergrund.jpg');
@@ -50,18 +52,22 @@
   </head>
   <body>
     <div class="form-container">
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Name des Kindes" required>
-            
-            <label for="datum">Datum:</label>
-            <input type="date" id="datum" name="datum" required>
-            
-            <label for="größe">Größe:</label>
-            <input type="number" id="größe" name="größe" placeholder="Größe des Kindes (in cm)" required>
-            
-            <button type="submit">Hinzufügen</button>
+      <form id="dataForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Name des Kindes" required>
+          
+          <label for="datum">Datum:</label>
+          <input type="date" id="datum" name="datum" required>
+          
+          <label for="größe">Größe:</label>
+          <input type="number" id="größe" name="größe" placeholder="Größe des Kindes (in cm)" required>
+          
+          <button id="addButton" type="button">Hinzufügen und Zurück zur Startseite</button>
+
+          
+
         </form>
     </div>
+
 </body>
 </html>

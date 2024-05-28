@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Website um des Wachstum von Kinder von klein auf festzuhalten" />
-    <meta name="keywords" content="Kinder, Wachstum" />
-    <meta name="author" content="David Berdar" />
-    <title>MeasureWallKids</title>
-    <link rel="stylesheet" href="Styles.css" />
-    <style>
-      body {
-          background-image: url('WebsiteFotos/weiße-wand-textur-oder-hintergrund.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
-          }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website um des Wachstum von Kinder von klein auf festzuhalten" />
+  <meta name="keywords" content="Kinder, Wachstum" />
+  <meta name="author" content="David Berdar" />
+  <title>MeasureWallKids</title>
+  <link rel="stylesheet" href="Styles.css" />
+  <script src="main.js" defer></script>
+  <style>
+    body {
+      background-image: url('WebsiteFotos/weiße-wand-textur-oder-hintergrund.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .draggable {
+      cursor: move;
+      position: absolute;
+    }
+    #dataList {
+      position: relative;
+      height: 1500px;
+    }
   </style>
-   </head>
-  <body>
-    <header><h1> MeasureWallKids</h1>
-      <div class="container"><button class="btn" ><a href="Eingeben.html" title="Wert hinzufügen">Wert hinzufügen</a></header>
-      </button> </div>
-    <main>
-    <div class="Verschiebung">
-
-    </div><img src="WebsiteFotos/Messwand.png" title="Messgiraffe" height="1100px"/>
-
-    <ul class="list"><hr class="divider"> 
-  <li >Marvin, 20.04.2024</li> 
-</ul>
-</div>
- </main>
-  </body>
+</head>
+<body>
+  <header>
+    <h1>MeasureWallKids</h1>
+    <div class="container">
+      <button class="btn">
+        <a href="Eingeben.html" title="Wert hinzufügen">Wert hinzufügen</a>
+      </button>
+    </div>
+  </header>
+  <main>
+    <img src="WebsiteFotos/Messwand.png" title="Messgiraffe" height="1100px" />
+    <ul id="dataList">
+   
+    </ul>
+  </main>
+</body>
 </html>

@@ -1,64 +1,84 @@
- h1{
-    background-color: orange;
-    color: black;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center; 
 
-  }
-  a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    transition: font-size 0.3s ease;
-    
-      } 
-      a:hover {
-    font-size: 28px;
-  }
-  .container {
-    text-align: center; 
-  }
-  .btn {
-    background-color: orange; 
-    color: rgb(255, 255, 255); 
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    font-size: 16px; 
-    transition: background-color 0.3s ease; 
-  }
-  
-  .btn:hover {
-    background-color: #cb7a00; 
-  }
-  img {
-    float: left;
-  }
-  p {
-    clear: both;
-  }
-  
-  .Verschiebung {
-    display: flex;
+h1 {
+  background-color: orange;
+  color: black;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
-.list {
-    margin-top: 390px;
-    font-size: 25px;
-    list-style-type: none;
-    font-weight: bolder;
+
+a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  transition: font-size 0.3s ease;
+}
+
+a:hover {
+  font-size: 28px;
+}
+
+
+.container {
+  text-align: center;
+}
+
+
+.btn {
+  background-color: orange;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #cb7a00;
+}
+
+
+img {
+  float: left;
+}
+
+
+#dataList li {
+  font-size: 20px; 
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 3px rgb(255, 85, 0); 
+
+
+}
+
+
+#dataList li::before {
+  content: "";
+  display: block;
+  width: 150%;
+  height: 4px;
+  background-color: rgb(252, 122, 0); 
+  margin-bottom: 5px; 
+}
+
+
+
+
+
+
+
+
     
-}
-.divider {
-  height: 3px; 
-  border: none; 
-  background-color: #000000; 
-  width: 13%; 
-  margin-left: 50px;
+
   
-}
+
+
+
+
   
   
   
