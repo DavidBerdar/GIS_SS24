@@ -9,17 +9,15 @@
     <title>MeasureWallKids</title>
     <link rel="stylesheet" href="Styles.css" />
     <script src="eingeben.js" defer></script>
+    <script src="Startseite.js" defer></script>
     
     <style>
       body {
           background-image: url('WebsiteFotos/weiße-wand-textur-oder-hintergrund.jpg');
           background-repeat: no-repeat;
           background-size: cover;
-          }
-  </style>
-  <style>
-    
-    .form-container {
+      }
+      .form-container {
         width: 50%; 
         margin: 0 auto; 
         padding: 20px; 
@@ -30,13 +28,13 @@
       input {
         width: 95%; 
         display: block; 
-        margin-bottom: 100px; 
-        padding: 20px; 
+        margin-bottom: 20px; 
+        padding: 10px; 
       }
 
       button {
         width: 100%; 
-        padding: 20px; 
+        padding: 10px; 
         background-color: #ff7b00; 
         color: #ffffff; 
         border: none; 
@@ -46,28 +44,38 @@
 
       label {
         font-weight: bold; 
-        color:#000000
-        }
-</style>
+        color: #000000;
+      }
+      
+      #dataList {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .draggable {
+        position: absolute;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #fff;
+        cursor: move;
+      }
+    </style>
   </head>
   <body>
     <div class="form-container">
       <form id="dataForm">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Name des Kindes" required>
-          
-          <label for="datum">Datum:</label>
-          <input type="date" id="datum" name="datum" required>
-          
-          <label for="größe">Größe:</label>
-          <input type="number" id="größe" name="größe" placeholder="Größe des Kindes (in cm)" required>
-          
-          <button id="addButton" type="button">Hinzufügen und Zurück zur Startseite</button>
-
-          
-
-        </form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name des Kindes" required>
+        
+        <label for="datum">Datum:</label>
+        <input type="date" id="datum" name="datum" required>
+        
+        <label for="größe">Größe:</label>
+        <input type="number" id="größe" name="größe" placeholder="Größe des Kindes (in cm)" required>
+        
+        <button id="addButton" type="button">Hinzufügen und Zurück zur Startseite</button>
+      </form>
     </div>
-
-</body>
+    <ul id="dataList"></ul>
+  </body>
 </html>
